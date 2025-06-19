@@ -1,0 +1,103 @@
+:root {
+  --black: #222;
+  --white: #ffff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+body.dark-mode {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header,
+footer {
+  background: var(--black);
+}
+
+header {
+  min-height: 50px;
+}
+
+footer {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer>div {
+  display: flex;
+  justify-content: end;
+}
+
+a {
+  color: #0077b5;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #999;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+.font-white {
+  color: #ffffff;
+}
+
+.member_wrapper img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.themeToggle {
+  background: #f5f5f5;
+  border-radius: 12px;
+  border: none
+}

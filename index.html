@@ -5,10 +5,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
-  <p>Initial</p>
+  <header class="mb-5">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">HL Developer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#membros">Membros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tarefas">Tarefas Realizadas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre o Projeto</a>
+            </li>
+          </ul>
+        </div>
+        <button class="themeToggle" class="btn btn-primary">
+          Mudar Tema
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="container members_wrapper mb-5" id="membros">
+      <h2 class="mb-4">Membros</h2>
+      <div class="row member_wrapper">
+        <div class="col-12 col-lg-2 d-flex justify-content-center mb-4">
+          <img src="/profile.png" alt="Membro: Henrique">
+        </div>
+  
+        <div class="col-12 col-lg-10 infos">
+          <h4>Henrique Luiz - Desenvolvedor front-end</h4>
+          <p class="mb-3">Residente de Balneário Camboriú, tem 25 anos e é apaixonado por tecnologia, piano e corrida.
+          </p>
+          <ul class="d-flex gap-3">
+            <li><a href="https://www.linkedin.com/in/henrique-luiz-9672bb181/" target="_blank">Linkedin</a></li>
+            <li><a href="https://github.com/henluizp" target="_blank">Github</a></li>
+          </ul>
+        </div>
+  
+      </div>
+    </section>
+  
+    <section class="container mb-5" id="tarefas">
+      <h2 class="mb-4">Tarefas Realizadas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>RU</th>
+            <th>Atividades</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Henrique Luiz</td>
+            <td>5359792</td>
+            <td>Implementou lista 1 e lista 2</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  
+  
+    <section class="container" id="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>O projeto consiste em criar uma página de apresentação.</p>
+      <p><strong>Tecnologias Utilizadas:</strong> HTML5, CSS3, JavaScript</p>
+    </section>
+  
+  
+  </main>
+  <footer>
+    <div class="container font-white">
+      Desenvolvido por Henrique Luiz
+    </div>
+  </footer>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </html>
